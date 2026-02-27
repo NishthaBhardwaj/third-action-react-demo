@@ -39,6 +39,8 @@ jobs:
           node-version: '>=10.15.0'
       - name: Get the project
         uses: actions/checkout@v6
+      - name: Install Dependency
+        run: npm ci
       - name: Build Project
         run: npm run build
       - name: Deploy
